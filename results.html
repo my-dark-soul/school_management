@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results | My School</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="shortcut icon" href="logo/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="text-white text-2xl font-bold">School Logo</div>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Links -->
+        <div class="hidden md:flex space-x-4">
+          <a
+            href="home.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Home</a
+          >
+          <a
+            href="classes.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Classes</a
+          >
+          <a
+            href="teachers.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Teachers</a
+          >
+          <a
+            href="students.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Students</a
+          >
+          <a
+            href="results.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Results</a
+          >
+          <a
+            href="routine.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Routine</a
+          >
+          <a
+            href="gallery.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Gallery</a
+          >
+          <a
+            href="contact.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden text-center md:hidden">
+        <a
+          href="home.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Home</a
+        >
+        <a
+          href="classes.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Classes</a
+        >
+        <a
+          href="teachers.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Teachers</a
+        >
+        <a
+          href="students.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Students</a
+        >
+        <a
+          href="results.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Results</a
+        >
+        <a
+          href="routine.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Routine</a
+        >
+        <a
+          href="gallery.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Gallery</a
+        >
+        <a
+          href="contact.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Contact Us</a
+        >
+      </div>
+    </nav>
+
+    <!-- Results Page -->
+    <section class="bg-gray-100 py-12">
+      <div class="container mx-auto px-4">
+        <!-- Section Title -->
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
+          Check Results
+        </h2>
+
+        <!-- Search Bar -->
+        <div
+          class="mb-6 flex flex-col items-center md:flex-row md:justify-center md:space-x-2"
+        >
+          <input
+            type="text"
+            placeholder="Enter Class"
+            class="px-4 py-2 border border-gray-300 rounded-lg w-full sm:w-1/4 mb-2 md:mb-0"
+          />
+          <input
+            type="text"
+            placeholder="Enter Roll Number"
+            class="px-4 py-2 border border-gray-300 rounded-lg w-full sm:w-1/4"
+          />
+          <button
+            class="mt-2 md:mt-0 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700"
+          >
+            Search
+          </button>
+        </div>
+
+        <!-- Results Table -->
+        <div class="overflow-x-auto">
+          <table class="min-w-full bg-white shadow-lg rounded-lg">
+            <thead>
+              <tr class="bg-green-600 text-white">
+                <th class="py-2 px-4 text-left">Roll Number</th>
+                <th class="py-2 px-4 text-left">Student Name</th>
+                <th class="py-2 px-4 text-left">Subject</th>
+                <th class="py-2 px-4 text-left">Marks Obtained</th>
+                <th class="py-2 px-4 text-left">Total Marks</th>
+                <th class="py-2 px-4 text-left">Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Example Row -->
+              <tr class="border-b">
+                <td class="py-2 px-4">12334444</td>
+                <td class="py-2 px-4">John Doe</td>
+                <td class="py-2 px-4">Mathematics</td>
+                <td class="py-2 px-4">85</td>
+                <td class="py-2 px-4">100</td>
+                <td class="py-2 px-4">A</td>
+              </tr>
+              <!-- Repeat for more results -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white p-6">
+      <div
+        class="container mx-auto flex flex-col sm:flex-row justify-between items-center"
+      >
+        <!-- Logo/Brand Name -->
+        <div class="text-center sm:text-left mb-4 sm:mb-0">
+          <h1 class="text-2xl font-bold">Your Brand</h1>
+          <p class="text-sm">Empowering Education for All</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div
+          class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 mb-4 sm:mb-0"
+        >
+        <a href="home.html" class="hover:text-green-400">Home</a>
+        <a href="about.html" class="hover:text-green-400">About Us</a>
+        <a href="contact.html" class="hover:text-green-400">Contact</a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center mt-4">
+        <p class="text-sm">© 2024 Maruf Hasan All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+  </body>
+</html>

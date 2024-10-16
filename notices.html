@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notices | My School</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="shortcut icon" href="logo/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="text-white text-2xl font-bold">School Logo</div>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Links -->
+        <div class="hidden md:flex space-x-4">
+          <a
+            href="home.html"
+            class="block hover:bg-gray-600 hover:rounded-md text-white px-2 py-2"
+            >Home</a
+          >
+          <a
+            href="classes.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Classes</a
+          >
+          <a
+            href="#"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Teachers</a
+          >
+          <a
+            href="#"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Students</a
+          >
+          <a
+            href="#"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Results</a
+          >
+          <a
+            href="#"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Routine</a
+          >
+          <a
+            href="#"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Gallery</a
+          >
+          <a
+            href="#"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden text-center md:hidden">
+        <a
+          href="home.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Home</a
+        >
+        <a
+          href="classes.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Classes</a
+        >
+        <a
+          href="#"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Teachers</a
+        >
+        <a
+          href="#"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Students</a
+        >
+        <a
+          href="#"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Results</a
+        >
+        <a
+          href="#"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Routine</a
+        >
+        <a
+          href="#"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Gallery</a
+        >
+        <a
+          href="#"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Contact Us</a
+        >
+      </div>
+    </nav>
+
+    <!-- Notice and other dashboard Section -->
+    <div class="container mx-auto p-6 bg-gray-200 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold text-center mb-6">All Notices</h2>
+
+      <div class="space-y-4">
+        <!-- Notice Item -->
+        <div
+          class="bg-white p-4 rounded-lg shadow flex items-center justify-between"
+        >
+          <div>
+            <h3 class="text-lg font-semibold">Notice Title 1</h3>
+            <p class="text-sm text-gray-600">
+              Brief description or details about the notice.
+            </p>
+          </div>
+          <span class="text-gray-500 text-sm">12 Oct 2024</span>
+        </div>
+
+        <!-- Notice Item -->
+        <div
+          class="bg-white p-4 rounded-lg shadow flex items-center justify-between"
+        >
+          <div>
+            <h3 class="text-lg font-semibold">Notice Title 2</h3>
+            <p class="text-sm text-gray-600">
+              Brief description or details about the notice.
+            </p>
+          </div>
+          <span class="text-gray-500 text-sm">10 Oct 2024</span>
+        </div>
+
+        <!-- Notice Item -->
+        <div
+          class="bg-white p-4 rounded-lg shadow flex items-center justify-between"
+        >
+          <div>
+            <h3 class="text-lg font-semibold">Notice Title 3</h3>
+            <p class="text-sm text-gray-600">
+              Brief description or details about the notice.
+            </p>
+          </div>
+          <span class="text-gray-500 text-sm">08 Oct 2024</span>
+        </div>
+
+        <!-- Add more notices here -->
+      </div>
+
+ <!-- View All Notices Button -->
+<div class="text-center mt-6">
+  <nav aria-label="Page navigation" class="inline-block">
+    <ul class="flex flex-wrap justify-center space-x-2 sm:space-x-2 space-y-2 sm:space-y-0">
+      <!-- Previous Button -->
+      <li>
+        <a
+          href="#"
+          class="w-full sm:w-auto px-4 py-2 text-center text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 flex items-center justify-center"
+          >&#60;</a
+        >
+      </li>
+
+      <!-- Page Numbers -->
+      <li>
+        <a
+          href="#"
+          class="w-full sm:w-auto px-4 py-2 text-center text-gray-700 bg-green-600 border border-gray-300 rounded-lg hover:bg-green-700 flex items-center justify-center"
+          >1</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="w-full sm:w-auto px-4 py-2 text-center text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 flex items-center justify-center"
+          >2</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="w-full sm:w-auto px-4 py-2 text-center text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 flex items-center justify-center"
+          >3</a
+        >
+      </li>
+
+      <!-- Next Button -->
+      <li>
+        <a
+          href="#"
+          class="w-full sm:w-auto px-4 py-2 text-center text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 flex items-center justify-center"
+          >&#62;</a
+        >
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    </div>
+
+    <footer class="bg-gray-800 text-white p-6">
+      <div
+        class="container mx-auto flex flex-col sm:flex-row justify-between items-center"
+      >
+        <!-- Logo/Brand Name -->
+        <div class="text-center sm:text-left mb-4 sm:mb-0">
+          <h1 class="text-2xl font-bold">Your Brand</h1>
+          <p class="text-sm">Empowering Education for All</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div
+          class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 mb-4 sm:mb-0"
+        >
+          <a href="home.html" class="hover:text-green-400">Home</a>
+          <a href="#" class="hover:text-green-400">About Us</a>
+          <a href="#" class="hover:text-green-400">Contact</a>
+          <a href="#" class="hover:text-green-400">Privacy Policy</a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center mt-4">
+        <p class="text-sm">© 2024 Maruf Hasan All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+  </body>
+</html>

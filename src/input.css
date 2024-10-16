@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom carousel styles */
+.carousel-inner {
+    display: flex;
+    transition: transform 1s ease-in-out; /* Smooth transition */
+  }
+
+  .carousel-container {
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Maintaining 16:9 aspect ratio */
+  .carousel-container::before {
+    content: '';
+    display: block;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+
+  .carousel-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Prevent text selection during swipe */
+  img {
+    user-select: none;
+  }

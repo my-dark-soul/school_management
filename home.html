@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | My School</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="shortcut icon" href="logo/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="text-white text-2xl font-bold">School Logo</div>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Links -->
+        <div class="hidden md:flex space-x-4">
+          <a
+            href="home.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Home</a
+          >
+          <a
+            href="classes.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Classes</a
+          >
+          <a
+            href="teachers.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Teachers</a
+          >
+          <a
+            href="students.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Students</a
+          >
+          <a
+            href="results.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Results</a
+          >
+          <a
+            href="routine.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Routine</a
+          >
+          <a
+            href="gallery.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Gallery</a
+          >
+          <a
+            href="contact.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden text-center md:hidden">
+        <a
+          href="home.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Home</a
+        >
+        <a
+          href="classes.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Classes</a
+        >
+        <a
+          href="teachers.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Teachers</a
+        >
+        <a
+          href="students.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Students</a
+        >
+        <a
+          href="results.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Results</a
+        >
+        <a
+          href="routine.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Routine</a
+        >
+        <a
+          href="gallery.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Gallery</a
+        >
+        <a
+          href="contact.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Contact Us</a
+        >
+      </div>
+    </nav>
+
+    <!-- Carousel Container -->
+    <div
+      class="carousel-container relative overflow-hidden w-full h-0 pb-[30.25%]"
+    >
+      <!-- 16:9 Aspect Ratio (56.25%) -->
+      <div class="carousel-inner flex w-full h-full absolute top-0 left-0">
+        <!-- Image 1 -->
+        <div class="min-w-full h-full">
+          <img
+            src="image/1.jpg"
+            class="object-cover w-full h-full"
+            alt="Image 1"
+          />
+        </div>
+        <!-- Image 2 -->
+        <div class="min-w-full h-full">
+          <img
+            src="image/2.jpg"
+            class="object-cover w-full h-full"
+            alt="Image 2"
+          />
+        </div>
+        <!-- Image 3 -->
+        <div class="min-w-full h-full">
+          <img
+            src="image/3.jpg"
+            class="object-cover w-full h-full"
+            alt="Image 3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- School Name and Logo or Photo Container -->
+    <div class="container mx-auto justify-between items-center">
+      <div class="relative h-12 mb-16">
+        <div class="absolute flex inset-0 items-center ml-4">
+          <img
+            src="image/konan.jpg"
+            alt="School Logo"
+            class="w-20 h-20 sm:w-40 sm:h-40 rounded-full border-4 border-green-600 object-cover"
+          />
+          <h1 class="text-2xl font-bold ml-4">School Name</h1>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Notice and other dashboard Section -->
+    <div class="container mx-auto p-6 bg-gray-200 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold text-center mb-6">Latest Notices</h2>
+
+      <div class="space-y-4">
+        <!-- Notice Item -->
+        <div
+          class="bg-white p-4 rounded-lg shadow flex items-center justify-between"
+        >
+          <div>
+            <h3 class="text-lg font-semibold">Notice Title 1</h3>
+            <p class="text-sm text-gray-600">
+              Brief description or details about the notice.
+            </p>
+          </div>
+          <span class="text-gray-500 text-sm">12 Oct 2024</span>
+        </div>
+
+        <!-- Notice Item -->
+        <div
+          class="bg-white p-4 rounded-lg shadow flex items-center justify-between"
+        >
+          <div>
+            <h3 class="text-lg font-semibold">Notice Title 2</h3>
+            <p class="text-sm text-gray-600">
+              Brief description or details about the notice.
+            </p>
+          </div>
+          <span class="text-gray-500 text-sm">10 Oct 2024</span>
+        </div>
+
+        <!-- Notice Item -->
+        <div
+          class="bg-white p-4 rounded-lg shadow flex items-center justify-between"
+        >
+          <div>
+            <h3 class="text-lg font-semibold">Notice Title 3</h3>
+            <p class="text-sm text-gray-600">
+              Brief description or details about the notice.
+            </p>
+          </div>
+          <span class="text-gray-500 text-sm">08 Oct 2024</span>
+        </div>
+
+        <!-- Add more notices here -->
+      </div>
+
+      <!-- View All Notices Button -->
+      <div class="text-center mt-6">
+        <a
+          href="notices.html"
+          class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+          >View All Notices</a
+        >
+      </div>
+    </div>
+
+
+
+    <!-- Headmasters' Main Cards Section -->
+    <div
+      class="container mx-auto flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mt-4 mb-6"
+    >
+      <!-- First Teacher Card -->
+      <div
+        class="w-full sm:max-w-md bg-gray-200 shadow-lg rounded-lg overflow-hidden mb-4 sm:mb-0 h-[320px] flex flex-col justify-between"
+      >
+        <!-- Fixed height and consistent background color -->
+        <div class="items-start p-4">
+          <!-- Teacher's Photo -->
+          <img
+            src="image/1.jpg"
+            alt="Teacher 1's Photo"
+            class="w-24 h-24 rounded-full border-4 border-green-600 object-cover"
+          />
+          <!-- Teacher's Info -->
+          <div class="mt-5 justify-center">
+            <!-- Updated to vertical layout -->
+            <h2 class="text-xl font-bold text-gray-900">Teacher 1's Name</h2>
+            <p class="text-gray-600 text-sm">Mathematics Teacher</p>
+          </div>
+        </div>
+        <!-- Teacher's Speech -->
+        <div class="p-4">
+          <p class="text-gray-700 text-sm leading-relaxed">
+            "Mathematics is the foundation of critical thinking. In every class,
+            I aim to build problem-solving skills in my students."
+          </p>
+          <a
+            href="#"
+            class="text-green-600 hover:underline text-sm"
+            onclick="openModal('Teacher 1', 'Mathematics Teacher', 'Mathematics is more than numbers. It is a way of understanding the world. My aim is to help students approach problems creatively and logically.')"
+            >See More</a
+          >
+        </div>
+      </div>
+
+      <!-- Second Teacher Card -->
+      <div
+        class="w-full sm:max-w-md bg-gray-200 shadow-lg rounded-lg overflow-hidden mb-4 sm:mb-0 h-[320px] flex flex-col justify-between"
+      >
+        <!-- Fixed height and consistent background color -->
+        <div class="items-start p-4">
+          <!-- Teacher's Photo -->
+          <img
+            src="image/2.jpg"
+            alt="Teacher 2's Photo"
+            class="w-24 h-24 rounded-full border-4 border-green-600 object-cover"
+          />
+          <!-- Teacher's Info -->
+          <div class="mt-5 justify-center">
+            <!-- Updated to vertical layout -->
+            <h2 class="text-xl font-bold text-gray-900">Teacher 2's Name</h2>
+            <p class="text-gray-600 text-sm">Science Teacher</p>
+          </div>
+        </div>
+        <!-- Teacher's Speech -->
+        <div class="p-4">
+          <p class="text-gray-700 text-sm leading-relaxed">
+            "Science teaches us to question everything. My goal is to inspire
+            curiosity and a love for discovery."
+          </p>
+          <a
+            href="#"
+            class="text-green-600 hover:underline text-sm"
+            onclick="openModal('Teacher 2', 'Science Teacher', 'Science is the art of discovery. I encourage my students to be curious, to ask questions, and to explore the world around them.')"
+            >See More</a
+          >
+        </div>
+      </div>
+
+      <!-- Third Teacher Card -->
+      <div
+        class="w-full sm:max-w-md bg-gray-200 shadow-lg rounded-lg overflow-hidden mb-4 sm:mb-0 h-[320px] flex flex-col justify-between"
+      >
+        <!-- Fixed height and consistent background color -->
+        <div class="items-start p-4">
+          <!-- Teacher's Photo -->
+          <img
+            src="image/3.jpg"
+            alt="Teacher 3's Photo"
+            class="w-24 h-24 rounded-full border-4 border-green-600 object-cover"
+          />
+          <!-- Teacher's Info -->
+          <div class="mt-5 justify-center">
+            <!-- Updated to vertical layout -->
+            <h2 class="text-xl font-bold text-gray-900">Teacher 3's Name</h2>
+            <p class="text-gray-600 text-sm">English Teacher</p>
+          </div>
+        </div>
+        <!-- Teacher's Speech -->
+        <div class="p-4">
+          <p class="text-gray-700 text-sm leading-relaxed">
+            "Language is a powerful tool. My aim is to teach students to express
+            their ideas clearly and confidently."
+          </p>
+          <a
+            href="#"
+            class="text-green-600 hover:underline text-sm"
+            onclick="openModal('Teacher 3', 'English Teacher', 'Through language, we connect with others and the world. I strive to help students express themselves confidently and creatively.')"
+            >See More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Full Speech Modal (This will work for all cards) -->
+    <div
+      id="modal"
+      class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden flex items-center justify-center"
+    >
+      <div class="bg-white w-full max-w-lg mx-auto rounded-lg shadow-lg">
+        <!-- Close Button -->
+        <div class="flex justify-end p-2">
+          <button
+            class="text-gray-500 hover:text-gray-700"
+            onclick="toggleModal()"
+          >
+            ✕
+          </button>
+        </div>
+        <!-- Modal Content -->
+        <div class="flex flex-col items-center p-6">
+          <!-- Teacher's Photo -->
+          <img
+            id="modal-photo"
+            src="image/1.jpg"
+            alt="Teacher's Photo"
+            class="w-32 h-32 rounded-full border-4 border-green-600 object-cover mb-4"
+          />
+          <!-- Teacher's Info -->
+          <h2
+            id="modal-name"
+            class="text-2xl font-bold text-gray-900 mb-2"
+          ></h2>
+          <p id="modal-position" class="text-gray-600 text-sm mb-4"></p>
+          <!-- Full Speech -->
+          <p
+            id="modal-speech"
+            class="text-gray-700 text-sm leading-relaxed text-justify"
+          ></p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="bg-gray-800 text-white p-6">
+      <div
+        class="container mx-auto flex flex-col sm:flex-row justify-between items-center"
+      >
+        <!-- Logo/Brand Name -->
+        <div class="text-center sm:text-left mb-4 sm:mb-0">
+          <h1 class="text-2xl font-bold">Your Brand</h1>
+          <p class="text-sm">Empowering Education for All</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div
+          class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 mb-4 sm:mb-0"
+        >
+          <a href="home.html" class="hover:text-green-400">Home</a>
+          <a href="about.html" class="hover:text-green-400">About Us</a>
+          <a href="contact.html" class="hover:text-green-400">Contact</a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center mt-4">
+        <p class="text-sm">© 2024 Maruf Hasan All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/speech.js"></script>
+  </body>
+</html>

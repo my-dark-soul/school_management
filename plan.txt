@@ -1,0 +1,22 @@
+# Design Section
+I want to design my web application using html, css, js, tailwindcss, reactjs(If needed)
+
+[#] Home Page
+
+[#] Class Section
+
+[#] Teacher's Corner
+
+[#] Contact Us
+
+[#] Result
+
+[#] Routine
+
+[#] Students
+
+[#] Gallery
+
+
+# Development Section
+First, i want to develop this web application using python. Then i develop my whole application using nodejs, expressjs and Mongodb.

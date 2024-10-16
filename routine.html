@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Routine | My School</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="shortcut icon" href="logo/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="text-white text-2xl font-bold">School Logo</div>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Links -->
+        <div class="hidden md:flex space-x-4">
+          <a
+            href="home.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Home</a
+          >
+          <a
+            href="classes.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Classes</a
+          >
+          <a
+            href="teachers.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Teachers</a
+          >
+          <a
+            href="students.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Students</a
+          >
+          <a
+            href="results.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Results</a
+          >
+          <a
+            href="routine.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Routine</a
+          >
+          <a
+            href="gallery.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Gallery</a
+          >
+          <a
+            href="contact.html"
+            class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden text-center md:hidden">
+        <a
+          href="home.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Home</a
+        >
+        <a
+          href="classes.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Classes</a
+        >
+        <a
+          href="teachers.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Teachers</a
+        >
+        <a
+          href="students.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Students</a
+        >
+        <a
+          href="results.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Results</a
+        >
+        <a
+          href="routine.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Routine</a
+        >
+        <a
+          href="gallery.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Gallery</a
+        >
+        <a
+          href="contact.html"
+          class="block hover:bg-gray-700 hover:rounded-md text-white px-2 py-2"
+          >Contact Us</a
+        >
+      </div>
+    </nav>
+
+    <!-- All classes section will be here -->
+
+    <!-- Tabs Container -->
+    <div class="min-w-full max-w-md mx-auto m-6">
+      <div
+        class="container flex mx-auto justify-between items-center bg-gray-200 rounded-lg shadow-lg p-2"
+      >
+        <!-- Tab for Six -->
+        <button
+          class="tab-button px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-800 hover:text-white transition active"
+          onclick="openTab(event, 'Six')"
+        >
+          Six
+        </button>
+
+        <!-- Tab for Seven -->
+        <button
+          class="tab-button px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-800 hover:text-white transition"
+          onclick="openTab(event, 'Seven')"
+        >
+          Seven
+        </button>
+
+        <!-- Tab for Eight -->
+        <button
+          class="tab-button px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-800 hover:text-white transition"
+          onclick="openTab(event, 'Eight')"
+        >
+          Eight
+        </button>
+
+        <!-- Tab for Nine -->
+        <button
+          class="tab-button px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-800 hover:text-white transition"
+          onclick="openTab(event, 'Nine')"
+        >
+          Nine
+        </button>
+
+        <!-- Tab for Ten -->
+        <button
+          class="tab-button px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-lg hover:bg-gray-800 hover:text-white transition"
+          onclick="openTab(event, 'Ten')"
+        >
+          Ten
+        </button>
+      </div>
+
+      <!-- Content for Six -->
+      <div class="container mx-auto">
+
+      <div
+      id="Six"
+      class="tab-content hidden bg-gray-200 p-4 mt-4 rounded-lg shadow-lg"
+    >
+      <h3 class="text-lg font-bold">Class Six</h3>
+
+      <!-- Academic Routine Table -->
+      <h4 class="font-semibold mt-4">Academic Routine</h4>
+      <table class="min-w-full bg-white shadow-lg rounded-lg mt-2">
+        <thead>
+          <tr class="bg-green-600 text-white">
+            <th class="py-2 px-4 text-left">Title</th>
+            <th class="py-2 px-4 text-left">Release Date</th>
+            <th class="py-2 px-4 text-left">Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-2 px-4">Class 6 Academic Routine</td>
+            <td class="py-2 px-4">01/01/2024</td>
+            <td class="py-2 px-4">
+              <a
+                href="routine_class_6_academic.pdf"
+                class="text-blue-600 hover:underline"
+                >Download</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Exam Routine Table -->
+      <h4 class="font-semibold mt-4">Exam Routine</h4>
+      <table class="min-w-full bg-white shadow-lg rounded-lg mt-2">
+        <thead>
+          <tr class="bg-green-600 text-white">
+            <th class="py-2 px-4 text-left">Title</th>
+            <th class="py-2 px-4 text-left">Release Date</th>
+            <th class="py-2 px-4 text-left">Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-2 px-4">Class 6 Exam Routine</td>
+            <td class="py-2 px-4">01/02/2024</td>
+            <td class="py-2 px-4">
+              <a
+                href="routine_class_6_exam.pdf"
+                class="text-blue-600 hover:underline"
+                >Download</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Content for Seven -->
+    <div
+      id="Seven"
+      class="tab-content hidden bg-gray-200 p-4 mt-4 rounded-lg shadow-lg"
+    >
+      <h3 class="text-lg font-bold">Class Seven</h3>
+
+      <!-- Academic Routine Table -->
+      <h4 class="font-semibold mt-4">Academic Routine</h4>
+      <table class="min-w-full bg-white shadow-lg rounded-lg mt-2">
+        <thead>
+          <tr class="bg-green-600 text-white">
+            <th class="py-2 px-4 text-left">Title</th>
+            <th class="py-2 px-4 text-left">Release Date</th>
+            <th class="py-2 px-4 text-left">Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-2 px-4">Class 7 Academic Routine</td>
+            <td class="py-2 px-4">01/01/2024</td>
+            <td class="py-2 px-4">
+              <a
+                href="routine_class_7_academic.pdf"
+                class="text-blue-600 hover:underline"
+                >Download</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Exam Routine Table -->
+      <h4 class="font-semibold mt-4">Exam Routine</h4>
+      <table class="min-w-full bg-white shadow-lg rounded-lg mt-2">
+        <thead>
+          <tr class="bg-green-600 text-white">
+            <th class="py-2 px-4 text-left">Title</th>
+            <th class="py-2 px-4 text-left">Release Date</th>
+            <th class="py-2 px-4 text-left">Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-2 px-4">Class 7 Exam Routine</td>
+            <td class="py-2 px-4">01/02/2024</td>
+            <td class="py-2 px-4">
+              <a
+                href="routine_class_7_exam.pdf"
+                class="text-blue-600 hover:underline"
+                >Download</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Content for Eight -->
+    <div
+      id="Eight"
+      class="tab-content hidden bg-gray-200 p-4 mt-4 rounded-lg shadow-lg"
+    >
+      <h3 class="text-lg font-bold">Class Eight</h3>
+
+      <!-- Academic Routine Table -->
+      <h4 class="font-semibold mt-4">Academic Routine</h4>
+      <table class="min-w-full bg-white shadow-lg rounded-lg mt-2">
+        <thead>
+          <tr class="bg-green-600 text-white">
+            <th class="py-2 px-4 text-left">Title</th>
+            <th class="py-2 px-4 text-left">Release Date</th>
+            <th class="py-2 px-4 text-left">Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-2 px-4">Class 8 Academic Routine</td>
+            <td class="py-2 px-4">01/01/2024</td>
+            <td class="py-2 px-4">
+              <a
+                href="routine_class_8_academic.pdf"
+                class="text-blue-600 hover:underline"
+                >Download</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Exam Routine Table -->
+      <h4 class="font-semibold mt-4">Exam Routine</h4>
+      <table class="min-w-full bg-white shadow-lg rounded-lg mt-2">
+        <thead>
+          <tr class="bg-green-600 text-white">
+            <th class="py-2 px-4 text-left">Title</th>
+            <th class="py-2 px-4 text-left">Release Date</th>
+            <th class="py-2 px-4 text-left">Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-2 px-4">Class 8 Exam Routine</td>
+            <td class="py-2 px-4">01/02/2024</td>
+            <td class="py-2 px-4">
+              <a
+                href="routine_class_8_exam.pdf"
+                class="text-blue-600 hover:underline"
+                >Download</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Content for Nine -->
+    <div
+      id="Nine"
+      class="tab-content hidden bg-gray-200 p-4 mt-4 rounded-lg shadow-lg"
+    >
+      <h3 class="text-lg font-bold">Class Nine</h3>
+
+      <!-- Academic Routine Table -->
+      <h4 class="font-semibold mt-4">Academic Routine</h4>
+      <table class="min-w-full bg-white shadow-lg rounded-lg mt-2">
+        <thead>
+          <tr class="bg-green-600 text-white">
+            <th class="py-2 px-4 text-left">Title</th>
+            <th class="py-2 px-4 text-left">Release Date</th>
+            <th class="py-2 px-4 text-left">Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-2 px-4">Class 9 Academic Routine</td>
+            <td class="py-2 px-4">01/01/2024</td>
+            <td class="py-2 px-4">
+              <a
+                href="routine_class_9_academic.pdf"
+                class="text-blue-600 hover:underline"
+                >Download</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Exam Routine Table -->
+      <h4 class="font-semibold mt-4">Exam Routine</h4>
+      <table class="min-w-full bg-white shadow-lg rounded-lg mt-2">
+        <thead>
+          <tr class="bg-green-600 text-white">
+            <th class="py-2 px-4 text-left">Title</th>
+            <th class="py-2 px-4 text-left">Release Date</th>
+            <th class="py-2 px-4 text-left">Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-2 px-4">Class 9 Exam Routine</td>
+            <td class="py-2 px-4">01/02/2024</td>
+            <td class="py-2 px-4">
+              <a
+                href="routine_class_9_exam.pdf"
+                class="text-blue-600 hover:underline"
+                >Download</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Content for Ten -->
+    <div
+      id="Ten"
+      class="tab-content hidden bg-gray-200 p-4 mt-4 rounded-lg shadow-lg"
+    >
+      <h3 class="text-lg font-bold">Class Ten</h3>
+
+      <!-- Academic Routine Table -->
+      <h4 class="font-semibold mt-4">Academic Routine</h4>
+      <table class="min-w-full bg-white shadow-lg rounded-lg mt-2">
+        <thead>
+          <tr class="bg-green-600 text-white">
+            <th class="py-2 px-4 text-left">Title</th>
+            <th class="py-2 px-4 text-left">Release Date</th>
+            <th class="py-2 px-4 text-left">Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-2 px-4">Class 10 Academic Routine</td>
+            <td class="py-2 px-4">01/01/2024</td>
+            <td class="py-2 px-4">
+              <a
+                href="routine_class_10_academic.pdf"
+                class="text-blue-600 hover:underline"
+                >Download</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Exam Routine Table -->
+      <h4 class="font-semibold mt-4">Exam Routine</h4>
+      <table class="min-w-full bg-white shadow-lg rounded-lg mt-2">
+        <thead>
+          <tr class="bg-green-600 text-white">
+            <th class="py-2 px-4 text-left">Title</th>
+            <th class="py-2 px-4 text-left">Release Date</th>
+            <th class="py-2 px-4 text-left">Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-2 px-4">Class 10 Exam Routine</td>
+            <td class="py-2 px-4">01/02/2024</td>
+            <td class="py-2 px-4">
+              <a
+                href="routine_class_10_exam.pdf"
+                class="text-blue-600 hover:underline"
+                >Download</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      </div>
+    </div>
+    <footer class="bg-gray-800 text-white p-6">
+      <div
+        class="container mx-auto flex flex-col sm:flex-row justify-between items-center"
+      >
+        <!-- Logo/Brand Name -->
+        <div class="text-center sm:text-left mb-4 sm:mb-0">
+          <h1 class="text-2xl font-bold">Your Brand</h1>
+          <p class="text-sm">Empowering Education for All</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div
+          class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 mb-4 sm:mb-0"
+        >
+          <a href="home.html" class="hover:text-green-400">Home</a>
+          <a href="about.html" class="hover:text-green-400">About Us</a>
+          <a href="contact.html" class="hover:text-green-400">Contact</a>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center mt-4">
+        <p class="text-sm">© 2024 Maruf Hasan All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/classes.js"></script>
+  </body>
+</html>
